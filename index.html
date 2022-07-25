@@ -90,6 +90,10 @@
             background-color: #fff;
         }
 
+        .price-badge-hot {
+            left: 80%;
+        }
+
         /* client */
         .clients-msg {
             color: #6C6C6C;
@@ -117,7 +121,7 @@
         }
 
         /* Media query */
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:992px) {
             .price-highlighted {
                 transform: translateY(0);
             }
@@ -273,7 +277,11 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 rounded-5 price-highlighted">
+                    <div class="card border-0 rounded-5 price-highlighted position-relative">
+                        <span
+                            class="position-absolute top-0 translate-middle badge rounded-pill py-2 px-3 fs-6 bg-danger price-badge-hot">
+                            Hot
+                        </span>
                         <div class="card-body ">
                             <h2 class="card-title fw-bold">$800</h2>
                             <h4 class="card-title fw-bold">Wedding plus</h4>
